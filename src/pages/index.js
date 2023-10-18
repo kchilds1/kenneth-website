@@ -81,8 +81,8 @@ export default function Home() {
           <Box sx={{ display: "flex", flexDirection: "column",color:"white",padding:"15px" }}>
             <Typography variant="h3" className={styles.text}>
               Experienced 
-              <br/> Web Developer
-              <br/>and IT Analyst.
+              Web Developer
+              and IT Analyst.
             </Typography>
             <Typography variant="h6">
               I am a highly motivated web developer with a passion for creating

@@ -3,7 +3,7 @@ import React from "react";
 import { Inter } from "next/font/google";
 import styles from "../styles/Home.module.css";
 
-import { AppBar, Toolbar, Typography, Box, Button } from "@mui/material";
+import { AppBar, Toolbar, Typography, Box, Button, CardMedia } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +18,11 @@ export default function Home() {
       <Box>
         <Toolbar sx={{padding:"0.1875rem"}}>
           <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-            <img
-              src="developer_logo.jpeg"
+            <CardMedia
+            component="img"
+              image="developer_logo.jpeg"
               style={{ borderRadius: "50%", width: "6.25rem", maxWidth:"100%", height:"auto" }}
+              alt="logo"
             />
           </Typography>
           <Button
@@ -90,7 +92,7 @@ export default function Home() {
             </Typography>
           </Box>
           <Box sx={{display:"flex", flexDirection:"column", alignItems:"center",color:"white"}}>
-          <img src="Profile_picture.jpg" style={{ width: "25rem", borderRadius: "50%" }} />
+          <CardMedia component="img"image="Profile_picture.jpg" style={{ width: "25rem", borderRadius: "50%" }} alt="professional photo" />
           <Typography variant="h6">Kenneth Childs</Typography>
           </Box>
         </Box>

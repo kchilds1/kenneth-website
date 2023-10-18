@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
+import React from "react";
 import { Inter } from "next/font/google";
-
+import styles from "../styles/Home.module.css";
 
 import { AppBar, Toolbar, Typography, Box, Button } from "@mui/material";
 
@@ -16,28 +16,99 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Box>
-        <Toolbar>
+        <Toolbar sx={{padding:"0.1875rem"}}>
           <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-           <img src="developer_logo.jpeg" style={{borderRadius:"50%", width:"100px"}} />
+            <img
+              src="developer_logo.jpeg"
+              style={{ borderRadius: "50%", width: "6.25rem", maxWidth:"100%", height:"auto" }}
+            />
           </Typography>
-          <Button sx={{marginRight:"2px", background:"linear-gradient(170deg, deepskyblue, navy 80%)",color:"white", borderRadius:"50%",padding:"5px"}}>HOME</Button>
-          <Button sx={{marginRight:"2px", background:"linear-gradient(170deg, deepskyblue, navy 80%)",color:"white", borderRadius:"50%",padding:"5px"}}>ABOUT</Button>
-          <Button sx={{marginRight:"2px", background:"linear-gradient(170deg, deepskyblue, navy 80%)",color:"white", borderRadius:"50%",padding:"5px"}}>CONTACT</Button>
-          <Button sx={{marginRight:"-2px", background:"linear-gradient(170deg, deepskyblue, navy 80%)",color:"white", borderRadius:"50%",padding:"5px"}}>SKILLS</Button>
+          <Button
+            sx={{
+              marginRight: "0.125rem",
+              background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+              color: "white",
+              borderRadius: "3.125rem",
+              padding: "0.3125rem",
+            }}
+          >
+            HOME
+          </Button>
+          <Button
+            sx={{
+              marginRight: "0.125rem",
+              background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+              color: "white",
+              borderRadius: "3.125rem",
+              padding: "0.3125rem",
+            }}
+          >
+            ABOUT
+          </Button>
+          <Button
+            sx={{
+              marginRight: "0.125rem",
+              background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+              color: "white",
+              borderRadius: "3.125rem",
+              padding: "0.3125rem",
+            }}
+          >
+            CONTACT
+          </Button>
+          <Button
+            sx={{
+              marginRight: "-0.125rem",
+              background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+              color: "white",
+              borderRadius: "3.125rem",
+              padding: "0.3125rem",
+            }}
+          >
+            SKILLS
+          </Button>
         </Toolbar>
-        <Box sx={{display:"flex", justifyContent:"space-between", alignItems:"center", paddingLeft:"20%"}}>
-        <Typography variant="h2">Hello,</Typography>
-        <img src="Profile_picture.jpg" style={{width:"20%",borderRadius:"50%"}}/>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "0.625rem",
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "column",color:"white",padding:"15px" }}>
+            <Typography variant="h3" className={styles.text}>
+              Experienced 
+              <br/> Web Developer
+              <br/>and IT Analyst.
+            </Typography>
+            <Typography variant="h6">
+              I am a highly motivated web developer with a passion for creating
+              responsive and visually appealing user interfaces. With experience
+              in HTML, CSS, JavaScript, and a variety of frameworks. I'm
+              dedicated to delivering exceptional digital experiences.
+            </Typography>
+          </Box>
+          <Box sx={{display:"flex", flexDirection:"column", alignItems:"center",color:"white"}}>
+          <img src="Profile_picture.jpg" style={{ width: "25rem", borderRadius: "50%" }} />
+          <Typography variant="h6">Kenneth Childs</Typography>
+          </Box>
         </Box>
-        <Typography variant="h2"sx={{paddingLeft:"20%",marginTop:"-4%"}}>Welcome to my site!</Typography> 
-        <Box sx={{display:"flex", justifyContent:"center", margin:"5%"}}>
 
-        <Button sx={{ background:"linear-gradient(170deg, deepskyblue, navy 80%)",color:"white", borderRadius:"10%",padding:"10px",fontSize:"20px",font:"bold"}}>RESUME</Button>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Button
+            sx={{
+              background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+              color: "white",
+              borderRadius: "0.625rem",
+              padding: "0.625rem",
+              fontSize: "1.25rem",
+              font: "bold",
+            }}
+          >
+            RESUME
+          </Button>
         </Box>
-        
-        
-
-        
       </Box>
     </>
   );

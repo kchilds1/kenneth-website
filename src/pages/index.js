@@ -16,6 +16,8 @@ import {
 export default function Home() {
   const router = useRouter();
 
+  
+
   return (
     <Layout>
       <Head>
@@ -24,7 +26,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Box>
-        <Container>
+        
           <Box
             sx={{
               display: "flex",
@@ -42,15 +44,15 @@ export default function Home() {
               }}
             >
               <Typography variant="h3" className={styles.h3}>
-                Experienced Web Developer and IT Analyst.
+                Web Developer and IT Analyst.
               </Typography>
-              <Typography variant="h6" className={styles.h6}>
+              <Box className={styles.text}>
                 I am a highly motivated web developer with a passion for
                 creating responsive and visually appealing user interfaces. With
                 experience in HTML, CSS, JavaScript, and a variety of
                 frameworks. I'm dedicated to delivering exceptional digital
                 experiences.
-              </Typography>
+              </Box>
             </Box>
             <Box
               sx={{
@@ -66,15 +68,18 @@ export default function Home() {
                 style={{ width: "100%", borderRadius: "50%" }}
                 alt="professional photo"
               />
-              <Typography variant="h5" className={styles.h5}>
+              <Typography variant="h5" className={styles.text}>
                 Kenneth Childs
               </Typography>
             </Box>
           </Box>
+         
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Button className={styles.resumeButton}>RESUME</Button>
+            <a href="resume.pdf" target="_blank">
+              <Button className={styles.resumeButton}>RESUME</Button>
+              </a>
           </Box>
-        </Container>
+            
       </Box>
     </Layout>
   );

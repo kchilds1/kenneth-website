@@ -24,13 +24,14 @@ body::before{
     content:'';
     position: absolute;
     inset: 0; 
-    opacity: 0.55;
+    opacity: 0.35;
     height: 100%;
     z-index: -1;
     top:0;
     left:0;
     
 }
+
 
 h1, h2,h3, h4, h5, h6, img, .footer {
     isolation: isolate;

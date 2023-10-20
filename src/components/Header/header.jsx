@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import styles from "@/styles/Home.module.css";
-
+import { useRouter } from "next/router";
 
 import {
   Toolbar,
@@ -12,6 +12,8 @@ import {
 } from "@mui/material";
 
 export default function Header(){
+    const router = useRouter();
+
     return(
         <>
          <Toolbar sx={{ padding: "3px" }}>

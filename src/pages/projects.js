@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 import Layout from "@/components/Layout/layout";
 import Lottie from "lottie-react";
 import animationData from "@/assets/sitAtComputer";
-import {useRef} from "react";
 
 import {
   Toolbar,
@@ -15,16 +14,13 @@ import {
   CardMedia,
   Container,
 } from "@mui/material";
-
-export default function Skills(){
-    const webDevAnimationRef = useRef();
+export default function Projects(){
     return(
         <Layout>
-          This is my skills page
-        <Box sx={{width: 100, display:"flex"}}>
-
-          <Lottie lottieRef={webDevAnimationRef} animationData={animationData}/>
-        </Box>
+        This is my projects page.
+        
+        
+    
         </Layout>
     )
 }

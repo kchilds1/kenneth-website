@@ -17,25 +17,36 @@
 }
 
 .foot {
-  margin-top: 50px;
-  font-family: "'Roboto','Helvetica','Arial',sans-serif;";
+  margin-top: 40px;
   display: flex;
+  width:100%;
+  
   justify-content: center;
-  padding: 40px;
+  position:fixed;
+  padding: 10px;
   color: white;
   background: linear-gradient(170deg, deepskyblue, navy 80%);
+  bottom:0;
 }
+.h3, .text {
+  color:white;
+}
+
+.text {
+  font-size: 20px;
+  
+}
+
 
 @media (max-width: 1307px) {
   .foot {
-    margin-top: 10px;
-    padding-top: 13px;
+   
   }
 }
 
 @media (max-width: 375px) {
   .foot {
-    margin-top: 132px;
+   
   }
   .button {
     margin: 3px;
@@ -52,33 +63,3 @@
   }
 }
 
-@media (max-width: 360px) {
-  .foot {
-    margin-top: 17px;
-    padding-top: 35px;
-  }
-  .resumeButton {
-    margin-top: 50px;
-  }
-  .h3 {
-    font-size: 22px;
-  }
-  .h6 {
-    font-size: 16px;
-  }
-}
-@media (max-width: 390px) {
-  .foot{
-    margin-top: 100px;
-    padding-top:27px;
-  }
-  .h3 {
-    font-size: 30px;
-  }
-  .h6 {
-    font-size: 18px;
-  }
-  .h5{
-    font-size: 13px;
-  }
-}

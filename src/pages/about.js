@@ -3,7 +3,9 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 import Layout from "@/components/Layout/layout";
-
+import Lottie from "lottie-react";
+import animationData from "@/assets/sitAtComputer";
+import {useRef} from "react";
 
 import {
   Toolbar,
@@ -19,6 +21,7 @@ import {
 
 export default function About() {
     const router = useRouter(); 
+    const webDevAnimationRef = useRef();
 
     return(
 <Layout>
@@ -39,17 +42,21 @@ Front-End Ingenuity: My commitment to staying on the cutting edge of web develop
 Join me on this journey as we explore the limitless possibilities of web development. Whether you're here to appreciate my work or collaborate on exciting projects, I'm excited to share my passion for creating exceptional web experiences with you. Let's turn your digital dreams into reality together!<br/>
 </Box>
 <hr/>
+<Box sx={{display:"flex", justifyContent:"space-between", alignContent:"center"}}>
 <Typography variant="h4" sx={{color:"white"}}>
 Personal Information
-</Typography>
 <List className={styles.text}>
         <ListItemText primary="Name: Kenneth Childs Jr" />
         <ListItemText primary="Address: Tulsa, OK" />
         <ListItemText primary="Email: Kenneth.Childs20@gmail.com" />
     </List>
-    
-</Box>
+</Typography>
+    <Box sx={{width: 150}}>
 
+<Lottie lottieRef={webDevAnimationRef} animationData={animationData}/>
+</Box> 
+</Box>
+</Box>
 </Layout>
     )
 }

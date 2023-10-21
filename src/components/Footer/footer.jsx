@@ -13,7 +13,8 @@ import {
     const router = useRouter();
 
     return(
-        <footer className={styles.foot}>
+      
+        <Box className={styles.foot}>
         <Typography className={styles.text}>
             <Box sx={{display:"flex", justifyContent:"center"}}>
              Social Media
@@ -30,6 +31,7 @@ import {
           </Box>
             
         </Typography>
-        </footer>
+        </Box>
+        
     )
   }

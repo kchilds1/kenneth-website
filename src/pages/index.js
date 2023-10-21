@@ -5,12 +5,10 @@ import { useRouter } from "next/router";
 import Layout from "@/components/Layout/layout";
 
 import {
-  Toolbar,
   Typography,
   Box,
   Button,
   CardMedia,
-  Container,
 } from "@mui/material";
 
 export default function Home() {

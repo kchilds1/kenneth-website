@@ -17,6 +17,11 @@ import {
 export default function Projects(){
     return(
         <Layout>
+           <Head>
+        <title>Kenneth projects</title>
+        <meta name="website projects" content="website projects" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
         This is my projects page.
         
         

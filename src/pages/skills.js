@@ -26,7 +26,12 @@ export default function Skills(){
         <meta name="website skills" content="website skills" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-
+      <Box>
+      <Typography variant="h3" className={styles.h3}>
+          About Me
+          <hr />
+        </Typography>
+        </Box>
             <Box sx={{display:"flex", justifyContent:"flex-end"}}>
             <Box sx={{width:500}}>
             <Lottie animationData={animationData}/>   

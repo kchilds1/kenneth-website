@@ -13,10 +13,15 @@ import {
   Container,
 } from "@mui/material";
 
-export default function Contacts(){
-    return(
-        <Layout>
-          This is my contacts page
-        </Layout>
-    )
+export default function Contacts() {
+  return (
+    <Layout>
+      <Head>
+        <title>Kenneth Contacts</title>
+        <meta name="website contacts" content="website contacts" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      This is my contacts page
+    </Layout>
+  );
 }

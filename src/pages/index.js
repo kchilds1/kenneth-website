@@ -18,11 +18,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <Head>
-        <title>Kenneth Website</title>
-        <meta name="website" content="website for project" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      
       <Box>
         
           <Box
@@ -73,9 +69,9 @@ export default function Home() {
           </Box>
          
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <a href="resume.pdf" target="_blank">
-              <Button className={styles.resumeButton}>RESUME</Button>
-              </a>
+            
+              <Button onClick={() => router.push(`resume.pdf`)}className={styles.resumeButton}>RESUME</Button>
+              
           </Box>
             
       </Box>

@@ -13,7 +13,7 @@
        <Box>
          <Typography variant="h3" className={styles.h3}>
            About Me
-           <hr />
+            <hr /> 
          </Typography>
          <Typography variant="h4" sx={{ color: "white" }}>
            Web Developer
@@ -38,9 +38,9 @@
            work or collaborate on exciting projects, I'm excited to share my
            passion for creating exceptional web experiences with you. Let's turn
            your digital dreams into reality together!
-           <br />
+            <br /> 
          </Box>
-         <hr />
+          <hr /> 
          <Box
            sx={{
              display: "flex",

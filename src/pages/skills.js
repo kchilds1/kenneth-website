@@ -21,7 +21,7 @@
        <Box>
        <Typography variant="h3" className={styles.h3}>
            My Skills
-           <hr />
+            <hr /> 
          </Typography>
          </Box>
              <Box sx={{display:"flex", justifyContent:"flex-end"}}>

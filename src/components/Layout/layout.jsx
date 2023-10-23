@@ -12,14 +12,14 @@ export default function Layout({ children }){
     const router = useRouter();
 
     return(
-        
+        <>
         <Box>
             <Header/>
             <Container>
             {children}
             </Container>
-            {/* <Footer/> */}
+              <Footer/>  
         </Box>
-        
+        </>
     );
 };

@@ -18,7 +18,7 @@ export default function Layout({ children }){
             <Container>
             {children}
             </Container>
-            <Footer/>
+            {/* <Footer/> */}
         </Box>
         
     );

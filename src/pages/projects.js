@@ -13,7 +13,26 @@
    CardMedia,
    Container,
  } from "@mui/material";
+
+
  export default function Projects(){
+  const [projectListing, setProjectListing] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+
+  async function fetchListings() {
+    setLoading(true);
+    const response = await fetch("/api/projects");
+    const data = await response.json();
+    console.log(data)
+    setProjectListing(data.projectListing);
+    setLoading(false);
+  }
+
+  useEffect(()=>{
+    fetchListings();
+  }, []);
+
      return(
          <Layout>         
          This is my projects page.              

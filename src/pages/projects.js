@@ -12,7 +12,7 @@
    Grid,
    Card,
    Button,
-   ButtonBase,
+   Paper,
    CardMedia, 
    CardContent,
  } from "@mui/material";
@@ -36,12 +36,13 @@
   }, []);
 
    
-console.log(projectListing)
+console.log(projectListing.img)
      return(
          <Layout>         
           <Grid container spacing = {3}>
             {projectListing.map((listings) =>(
               <Grid item key={listings._id} xs={12} sm={6} md={4}>
+               <Paper elevation={3}>
               <Card>
                   <CardMedia
                     component="img"
@@ -50,19 +51,25 @@ console.log(projectListing)
                     alt="logo"
                   />
                   <CardContent>
+                    <Box sx={{display:"flex", justifyContent:"center"}}>
                   <Typography variant="h4">{listings.projectName}</Typography>
+                  </Box>
                   </CardContent>
-                  <Button onClick={()=> router.push(listings.codeLink)}>
+                  <Box sx={{display:"flex", justifyContent:"center", margin:"4px", gap:"4px"}}>
+                  <Button onClick={()=> router.push(listings.codeLink)} className={styles.button}>
                     CODE
                   </Button>
-                  <Button onClick={()=> router.push(listings.projectLink)}>
+                  <Button onClick={()=> router.push(listings.projectLink)} className={styles.button}>
                     PROJECT
                   </Button>
-                  </Card>  
+                  
+                  </Box>
+                  </Card>
+                  </Paper> 
               </Grid>
-            
             ))}
             </Grid>           
+           
          </Layout>
      );
  }

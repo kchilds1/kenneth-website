@@ -6,12 +6,14 @@
    Toolbar,
    Typography,
    Button,
+   Paper,
    CardMedia,
  } from "@mui/material"
  export default function Header(){
      const router = useRouter()
      return(
        <>  
+
           <Toolbar sx={{ padding: "3px" }}>
            <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
              <CardMedia
@@ -26,9 +28,11 @@
                alt="logo"
              />
            </Typography>
+           
            <Button className={styles.button} onClick={() => router.push(`/`)}>
              HOME
            </Button>
+           
            <Button
              className={styles.button}
              onClick={() => router.push(`/about/`)}
@@ -54,6 +58,7 @@
              SKILLS
            </Button>
          </Toolbar>
+         
          </> 
      )
  }

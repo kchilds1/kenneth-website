@@ -10,10 +10,13 @@ const projectSchema = new mongoose.Schema({
     projectLink: {
         type: String,
     },
+    img: {
+        type: String,
+    },
 });
 
 const ProjectModel = mongoose.models.project || 
-mongoose.model('project',projectSchema, 'projects_data')
+mongoose.model('project',projectSchema, 'projectsData')
 
 export async function fetchProjectListings(){
     try{

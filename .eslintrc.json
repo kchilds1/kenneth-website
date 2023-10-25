@@ -1,7 +1,7 @@
 // {
 //   "extends": ["next/babel","next/core-web-vitals"]
 // }
-
+//Attempting to fix vercel erroring during deployment
 {
   "eslint.workingDirectories": [
     { "pattern": "apps/*/" },

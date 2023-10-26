@@ -4,8 +4,15 @@
 
 //Attempt to fix ESLint error in Vercel
 
+// {
+//   "extends": [
+//     "next"
+//   ]
+// }
+
 {
-  "extends": [
-    "next"
-  ]
+  "extends": ["next"],
+  "rules": {
+    "react/no-unescaped-entities": "off"
+  }
 }

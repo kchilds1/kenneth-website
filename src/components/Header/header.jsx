@@ -43,7 +43,7 @@
              className={styles.button}
              onClick={() => router.push(`/contacts/`)}
            >
-             CONTACT
+             CONTACT US
            </Button>
            <Button
              className={styles.button}

@@ -14,7 +14,9 @@ import {
 export default function Home() {
   const router = useRouter();
 
-  
+  const handleButtonClick = () =>{
+    router.push("/resume.pdf");
+  };
 
   return (
     <Layout>
@@ -70,7 +72,7 @@ export default function Home() {
          
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             
-              <Button onClick={() => router.push(`resume.pdf`)}className={styles.resumeButton}>RESUME</Button>
+              <Button onClick={handleButtonClick}className={styles.resumeButton}>RESUME</Button>
               
           </Box>
             

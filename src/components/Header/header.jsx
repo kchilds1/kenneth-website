@@ -39,12 +39,7 @@
            >
              ABOUT
            </Button>
-           <Button
-             className={styles.button}
-             onClick={() => router.push(`/contacts/`)}
-           >
-             CONTACT US
-           </Button>
+          
            <Button
              className={styles.button}
              onClick={() => router.push(`/projects/`)}
@@ -56,6 +51,12 @@
              onClick={() => router.push(`/skills/`)}
            >
              SKILLS
+           </Button>
+           <Button
+             className={styles.button}
+             onClick={() => router.push(`/contacts/`)}
+           >
+             CONTACT
            </Button>
          </Toolbar>
          

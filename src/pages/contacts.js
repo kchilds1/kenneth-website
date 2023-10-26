@@ -58,44 +58,47 @@
      <Layout>
        <Box sx={{marginBottom:"20px"}}>
           <Typography
-            variant="h2"
-            sx={{ display: "flex", justifyContent: "center", fontFamily:"Impact, fantasy" }}
+            variant="h3"
+            sx={{ display: "flex", justifyContent: "center" ,color:"white" }}
           >
-            CONTACT US
+            CONTACT
+          </Typography >
+          <Typography sx={{ display: "flex", justifyContent: "center" ,color:"white" }}>
+          Question, Suggestion, or Complaint? Let Me Know.
           </Typography>
             <Box
               sx={{
                 display: "flex",
                 justifyContent: "center",
                 flexDirection: "column",
-                gap:"5px",
+                gap:"10px",
               }}
             >
               <TextField
                 label="Your Name"
                 value={contactName}
                 onChange={(e) => setContactName(e.target.value)}
-               
+               sx={{background:"white", borderRadius:"4px"}}
               />
               <TextField
                 label="Company Name"
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
-                
+                sx={{background:"white", borderRadius:"4px"}}
               />
               
               <TextField
                 label="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                
+                sx={{background:"white", borderRadius:"4px"}}
               />
               
               <TextField
                 label="Phone Number"
                 value={phoneNumber}
                 onChange={(e) => setPhone(e.target.value)}
-                
+                sx={{background:"white", borderRadius:"4px"}}
               />
               
               <Box >
@@ -107,6 +110,7 @@
                   columns={6}
                   value={question}
                   onChange={(e) => setQuestion(e.target.value)}
+                  sx={{background:"white",borderRadius:"4px"}}
                 />
               </Box>
               <Box sx={{ display: "flex", justifyContent: "center" }}>

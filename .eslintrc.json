@@ -1,18 +1,6 @@
-//  {
-//    "extends": ["next/babel","next/core-web-vitals"]
-//  }
+ {
+   "extends": ["next/babel","next/core-web-vitals"]
+ }
 
-//Attempt to fix ESLint error in Vercel
 
-// {
-//   "extends": [
-//     "next"
-//   ]
-// }
 
-{
-  "extends": ["next"],
-  "rules": {
-    "react/no-unescaped-entities": "off"
-  }
-}

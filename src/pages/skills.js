@@ -4,8 +4,8 @@
  import { useRouter } from "next/router";
  import Layout from "@/components/Layout/layout";
   import Lottie from "lottie-react";
-  
-  import animationData from "@/assets/skillsAnimation"
+  import animationData from "@/assets/skillsAnimation";
+//   import animationData from "@/assets/skillsAnimation";
  import {
    Toolbar,
    Typography,

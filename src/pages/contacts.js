@@ -20,10 +20,18 @@
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [question, setQuestion] = useState("");
-  
+  const [isButtonDisabled, setButtonDisabled] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   async function handleSubmit(event){
-    event.preventDefault();
+     event.preventDefault();
+
+     if (!contactName || !email) {
+      alert("Please fill in required fields.");
+      return;
+    }
+
+    setButtonDisabled(true);
 
   const infoPayload = {
     company,
@@ -35,7 +43,7 @@
   console.log("Payload: ", infoPayload);
   // SEND DATA OVER THE SERVER
   try {
-    const response = await fetch("/api/companies", {
+    const response = await fetch("/api/contacts", {
       method: "POST",
       body: JSON.stringify(infoPayload),
       headers: {
@@ -44,14 +52,46 @@
     });
     if (response.ok) {
       console.log("Data sent successfully!");
+      // Set submitted to true to display the thank you message
+      setSubmitted(true);
     } else {
       console.log("Failed to send data to the server.");
     }
   } catch (error) {
     console.error("An error occurred:", error);
+  } finally {
+    // Enable the button after the form submission is complete
+    setButtonDisabled(false);
   }
-}
+};
 
+// Conditionally render the thank you message
+const renderFormOrThankYou = () => {
+  if (submitted) {
+    return (
+      <Typography variant="h5" sx={{ textAlign: "center", color: "white" }}>
+        Thank you for your submission!
+      </Typography>
+    );
+  } else {
+    return (
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Button
+          sx={{
+            color: "white",
+            background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+            margin: "4px",
+          }}
+          variant="contained"
+          onClick={handleSubmit}
+          disabled={isButtonDisabled}
+        >
+          SUBMIT
+        </Button>
+      </Box>
+    );
+  }
+};
 
 
    return (
@@ -66,6 +106,9 @@
           <Typography sx={{ display: "flex", justifyContent: "center" ,color:"white" }}>
           Question, Suggestion, or Complaint? Let Me Know.
           </Typography>
+          {submitted ? ( // Render thank you message if submitted is true
+          renderFormOrThankYou()
+        ) : (
             <Box
               sx={{
                 display: "flex",
@@ -78,7 +121,9 @@
                 label="Your Name"
                 value={contactName}
                 onChange={(e) => setContactName(e.target.value)}
+                required={true}
                sx={{background:"white", borderRadius:"4px"}}
+               
               />
               <TextField
                 label="Company Name"
@@ -91,13 +136,14 @@
                 label="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required={true}
                 sx={{background:"white", borderRadius:"4px"}}
               />
               
               <TextField
                 label="Phone Number"
                 value={phoneNumber}
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={(e) => setPhoneNumber(e.target.value)}
                 sx={{background:"white", borderRadius:"4px"}}
               />
               
@@ -113,21 +159,16 @@
                   sx={{background:"white",borderRadius:"4px"}}
                 />
               </Box>
-              <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Button
-              sx={{
-                color: "white",
-                background: "linear-gradient(170deg, deepskyblue, navy 80%)",margin:"4px" 
-              }}
-              variant="contained"
-              onClick={handleSubmit}
-            >
-              SUBMIT
-            </Button>
-            </Box>
-            </Box>
-        </Box>
-     </Layout>
-     
-   );
- }
+            {renderFormOrThankYou()}
+          </Box>
+        )}
+      </Box>
+    </Layout>
+  );
+}
+
+
+
+
+
+

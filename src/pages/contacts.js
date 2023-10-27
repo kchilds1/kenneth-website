@@ -35,7 +35,7 @@
   console.log("Payload: ", infoPayload);
   // SEND DATA OVER THE SERVER
   try {
-    const response = await fetch("/api/companies", {
+    const response = await fetch("/api/contacts", {
       method: "POST",
       body: JSON.stringify(infoPayload),
       headers: {

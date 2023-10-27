@@ -1,5 +1,5 @@
 import dbConnect from "@/server/db";
-import { createContact } from "@/server/companies";
+import { createContact } from "@/server/contacts";
 
 export default async function handler(req, res) {
   try {
@@ -9,7 +9,7 @@ export default async function handler(req, res) {
       const reqPayload = req.body;
       console.log("Req Payload:", reqPayload);
 
-      const newContact = await createJob(reqPayload);
+      const newContact = await createContact(reqPayload);
 
       console.log("New Contact", newContact);
 

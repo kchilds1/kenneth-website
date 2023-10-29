@@ -16,13 +16,13 @@
     "eslint-plugin-next": "^0.0.0",
     "lottie-react": "^2.4.0",
     "mongoose": "^7.6.3",
-    "next": "13.5.4",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^13.4.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-particles": "^2.12.2"
   },
   "devDependencies": {
-    "eslint": "^8.52.0",
-    "eslint-config-next": "^13.5.4"
+    "eslint": "^8.49.0",
+    "eslint-config-next": "^13.4.19"
   }
 }

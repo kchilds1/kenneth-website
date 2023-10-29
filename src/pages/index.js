@@ -15,12 +15,18 @@ export default function Home() {
   const router = useRouter();
 
   const handleButtonClick = () =>{
-    router.push("/resume.pdf");
+    window.open("/resume.pdf","_blank");
   };
 
   return (
+    
     <Layout>
-      
+      <Head>
+        <title>Kenneth website Home page</title>
+        <meta name="kenneth website home page" content="Home page" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head> 
       <Box>
         
           <Box

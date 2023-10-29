@@ -96,6 +96,12 @@ const renderFormOrThankYou = () => {
 
    return (
      <Layout>
+       <Head>
+        <title>Kenneth website contacts</title>
+        <meta name="contacts page" content="contacts" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
        <Box sx={{marginBottom:"20px"}}>
           <Typography
             variant="h3"

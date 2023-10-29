@@ -4,7 +4,7 @@ import Footer from "../Footer/footer";
 import { useRouter } from "next/router";
 
 import {
-    Box,
+    
     Container,
   } from "@mui/material";
 
@@ -13,13 +13,13 @@ export default function Layout({ children }){
 
     return(
         <>
-        <Box>
+        
             <Header/>
             <Container>
             {children}
             </Container>
               <Footer/>  
-        </Box>
+        
         </>
     );
 };

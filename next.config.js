@@ -4,8 +4,10 @@
  }
  //module.exports = nextConfig
 
- module.exports = {
+ 
+
+//  module.exports = nextConfig
+
+module.exports = {
   swcMinify: false,
 }
-
- 

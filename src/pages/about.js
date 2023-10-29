@@ -11,6 +11,12 @@ export default function About() {
   const webDevAnimationRef = useRef();
   return (
     <Layout>
+       <Head>
+        <title>Kenneth website about page</title>
+        <meta name="about page" content="about me" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Box>
         <Typography variant="h3" className={styles.h3}>
           About Me

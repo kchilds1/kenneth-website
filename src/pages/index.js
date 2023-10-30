@@ -78,7 +78,7 @@ export default function Home() {
          
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             
-              <Button onClick={handleButtonClick}className={styles.resumeButton}>RESUME</Button>
+              <Button onClick={handleButtonClick}className={styles.resume}>RESUME</Button>
               
           </Box>
             

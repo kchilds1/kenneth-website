@@ -1,64 +1,92 @@
- import Head from "next/head";
- import React from "react";
- import styles from "@/styles/Home.module.css";
- import { useRouter } from "next/router"
- import {
-   Toolbar,
-   Typography,
-   Button,
-   CardMedia,
- } from "@mui/material"
- export default function Header(){
-     const router = useRouter()
-     return(
-       <>  
-
-          <Toolbar sx={{ padding: "3px" }}>
-           <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-             <CardMedia
-               component="img"
-               image="developer_logo.jpeg"
-               style={{
-                 borderRadius: "100%",
-                 width: "100px",
-                 maxWidth: "100%",
-                 height: "auto",
-               }}
-               alt="logo"
-             />
-           </Typography>
-           
-           <Button className={styles.button} onClick={() => router.push(`/`)}>
-             HOME
-           </Button>
-           
-           <Button
-             className={styles.button}
-             onClick={() => router.push(`/about/`)}
-           >
-             ABOUT
-           </Button>
-          
-           <Button
-             className={styles.button}
-             onClick={() => router.push(`/projects/`)}
-           >
-             PROJECTS
-           </Button>
-           <Button
-             className={styles.button}
-             onClick={() => router.push(`/skills/`)}
-           >
-             SKILLS
-           </Button>
-           <Button
-             className={styles.button}
-             onClick={() => router.push(`/contacts/`)}
-           >
-             CONTACT
-           </Button>
-         </Toolbar>
-         
-         </> 
-     )
- }
+import Head from "next/head";
+import React from "react";
+import styles from "@/styles/Home.module.css";
+import { useRouter } from "next/router";
+import { Toolbar, Typography, Button, CardMedia } from "@mui/material";
+export default function Header() {
+  const router = useRouter();
+  return (
+    <>
+      <Toolbar sx={{ padding: "3px" }}>
+        <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+          <CardMedia
+            component="img"
+            image="developer_logo.jpeg"
+            style={{
+              borderRadius: "100%",
+              width: "100px",
+              maxWidth: "100%",
+              height: "auto",
+            }}
+            alt="logo"
+          />
+        </Typography>
+        <a href="/">
+          <Button
+            sx={{
+              marginRight: "2px",
+              background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+              color: "white",
+              borderRadius: "15px",
+              padding: "5px",
+            }}
+          >
+            HOME
+          </Button>
+        </a>
+        <a href="/about">
+          <Button
+            sx={{
+              marginRight: "2px",
+              background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+              color: "white",
+              borderRadius: "15px",
+              padding: "5px",
+            }}
+          >
+            ABOUT
+          </Button>
+        </a>
+        <a href="/projects">
+          <Button
+            sx={{
+              marginRight: "2px",
+              background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+              color: "white",
+              borderRadius: "15px",
+              padding: "5px",
+            }}
+          >
+            PROJECTS
+          </Button>
+        </a>
+        <a href="/skills">
+          <Button
+            sx={{
+              marginRight: "2px",
+              background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+              color: "white",
+              borderRadius: "15px",
+              padding: "5px",
+            }}
+          >
+            SKILLS
+          </Button>
+        </a>
+        <a href="/contacts">
+          <Button
+            sx={{
+              marginRight: "2px",
+              background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+              color: "white",
+              borderRadius: "15px",
+              padding: "5px",
+            }}
+          >
+            CONTACT
+          </Button>
+        </a>
+      </Toolbar>
+    </>
+  );
+}

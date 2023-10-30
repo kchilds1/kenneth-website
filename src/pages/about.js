@@ -58,8 +58,9 @@ export default function About() {
           <Typography variant="h4" sx={{ color: "white", paddingTop: "10px" }}>
             Personal Information
             <Box className={styles.text}>
-              Name: Kenneth Childs Jr Address: Tulsa, OK Email:
-              Kenneth.Childs20@gmail.com
+              <p>Name: Kenneth Childs Jr</p>
+              <p>Address: Tulsa, OK</p> 
+              <p>Email: Kenneth.Childs20@gmail.com</p>
             </Box>
           </Typography>
           <Box sx={{ width: 150 }}>

@@ -75,13 +75,25 @@ export default function Projects() {
                 >
                   <Button
                     onClick={() => handleOpenInNewTab(listings.codeLink)}
-                    className={styles.button}
+                    sx={{
+                      marginRight: "2px",
+                      background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+                      color: "white",
+                      borderRadius: "15px",
+                      padding: "5px",
+                    }}
                   >
                     CODE
                   </Button>
                   <Button
                     onClick={() => handleOpenInNewTab(listings.projectLink)}
-                    className={styles.button}
+                    sx={{
+                      marginRight: "2px",
+                      background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+                      color: "white",
+                      borderRadius: "15px",
+                      padding: "5px",
+                    }}
                   >
                     PROJECT
                   </Button>

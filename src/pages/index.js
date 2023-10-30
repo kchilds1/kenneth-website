@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box>
+      <main>
         <Box
           sx={{
             display: "flex",
@@ -84,7 +84,7 @@ export default function Home() {
             RESUME
           </Button>
         </Box>
-      </Box>
+      </main>
     </Layout>
   );
 }

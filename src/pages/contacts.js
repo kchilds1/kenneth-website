@@ -102,7 +102,7 @@ const renderFormOrThankYou = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-       <Box sx={{marginBottom:"20px"}}>
+       <main sx={{marginBottom:"20px"}}>
           <Typography
             variant="h3"
             sx={{ display: "flex", justifyContent: "center" ,color:"white" }}
@@ -169,7 +169,7 @@ const renderFormOrThankYou = () => {
             {renderFormOrThankYou()}
           </Box>
         )}
-      </Box>
+      </main>
     </Layout>
   );
 }

@@ -17,7 +17,7 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box>
+      <main>
         <Typography variant="h3" className={styles.h3}>
           About Me
           <hr />
@@ -70,7 +70,7 @@ export default function About() {
             />
           </Box>
         </Box>
-      </Box>
+      </main>
     </Layout>
   );
 }

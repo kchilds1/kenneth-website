@@ -25,7 +25,7 @@ body::before{
     position: absolute;
     inset: 0; 
     opacity: 0.35;
-  height: 100%; 
+  min-height: 100%; 
     z-index: -1;
     top:0;
     left:0;

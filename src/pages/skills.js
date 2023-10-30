@@ -24,11 +24,23 @@
          </Typography>
        </Box>
        <Box
-         sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+         sx={{ 
+          "@media (max-width:390px)": {
+            marginTop:"25px",
+          },
+          display: "flex", justifyContent: "center", alignItems: "center", flexWrap:"wrap" }}
        >
-         <Card sx={{ maxWidth: 345 }}>
+         <Card sx={{ 
+          "@media (max-width:375px)": {
+            marginTop:"10%",
+            paddingRight:"20%",
+            paddingLeft:"20%",
+          },
+         
+          maxWidth: 345 }}>
            <CardContent
              sx={{
+              
                display: "flex",
                flexDirection: "column",
                alignItems: "center",
@@ -85,7 +97,11 @@
              </Box>
            </CardContent>
          </Card>
-         <Box sx={{ width: 500 }}>
+         <Box sx={{ 
+          "@media (max-width:375px)": {
+            margin:"10%",
+          },
+          width: 500 }}>
            <Lottie loop={false} animationData={animationData} /> 
          </Box>
        </Box>

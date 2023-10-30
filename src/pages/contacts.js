@@ -78,6 +78,11 @@ const renderFormOrThankYou = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Button
           sx={{
+            "@media (max-width:375px)": {
+              width:"4%",
+              fontSize:"10px",
+              padding:"5px",
+            },
             color: "white",
             background: "linear-gradient(170deg, deepskyblue, navy 80%)",
             margin: "4px",

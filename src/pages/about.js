@@ -55,7 +55,15 @@ export default function About() {
             alignContent: "center",
           }}
         >
-          <Typography variant="h4" sx={{ color: "white", paddingTop: "10px" }}>
+          <Typography variant="h4" sx={{ 
+            "@media (max-width: 375px)":{
+                fontSize:"17px",
+            },
+            "@media (max-width:390px)": {
+              marginBottom:"30%",
+              
+            },
+            color: "white", paddingTop: "10px" }}>
             Personal Information
             <Box className={styles.text}>
               <p>Name: Kenneth Childs Jr</p>
@@ -63,7 +71,11 @@ export default function About() {
               <p>Email: Kenneth.Childs20@gmail.com</p>
             </Box>
           </Typography>
-          <Box sx={{ width: 150 }}>
+          <Box sx={{ 
+            "@media (max-width: 375px)":{
+              width:100,
+          },
+            width: 150 }}>
             <Lottie
               lottieRef={webDevAnimationRef}
               animationData={animationData}

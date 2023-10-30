@@ -24,6 +24,12 @@ export default function Header() {
         <a href="/">
           <Button
             sx={{
+              
+              "@media (max-width:375px)": {
+                width:"4%",
+                fontSize:"10px",
+                padding:"5px",
+              },
               marginRight: "2px",
               background: "linear-gradient(170deg, deepskyblue, navy 80%)",
               color: "white",
@@ -37,6 +43,12 @@ export default function Header() {
         <a href="/about">
           <Button
             sx={{
+              "@media (max-width:375px)": {
+                width:"4%",
+                fontSize:"10px",
+                padding:"5px",
+                
+              },
               marginRight: "2px",
               background: "linear-gradient(170deg, deepskyblue, navy 80%)",
               color: "white",
@@ -50,6 +62,11 @@ export default function Header() {
         <a href="/projects">
           <Button
             sx={{
+              "@media (max-width:375px)": {
+                width:"4%",
+                fontSize:"10px",
+                padding:"5px",
+              },
               marginRight: "2px",
               background: "linear-gradient(170deg, deepskyblue, navy 80%)",
               color: "white",
@@ -63,6 +80,11 @@ export default function Header() {
         <a href="/skills">
           <Button
             sx={{
+              "@media (max-width:375px)": {
+                width:"4%",
+                fontSize:"10px",
+                padding:"5px",
+              },
               marginRight: "2px",
               background: "linear-gradient(170deg, deepskyblue, navy 80%)",
               color: "white",
@@ -76,6 +98,11 @@ export default function Header() {
         <a href="/contacts">
           <Button
             sx={{
+              "@media (max-width:375px)": {
+                width:"4%",
+                fontSize:"10px",
+                padding:"5px",
+              },
               marginRight: "2px",
               background: "linear-gradient(170deg, deepskyblue, navy 80%)",
               color: "white",

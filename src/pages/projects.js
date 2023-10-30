@@ -49,11 +49,21 @@ export default function Projects() {
           <CircularProgress />
         </Box>
       )}
-      <Grid container spacing={3}>
+      <Grid container spacing={3} sx={{
+        "@media (max-width: 375px)": {
+          height:"15%",
+          marginBottom:"30%",
+        },
+        "@media (max-width:390px)": {
+          marginBottom: " 30%"
+        },
+      }}>
         {projectListing.map((listings) => (
           <Grid item key={listings._id} xs={12} sm={6} md={4}>
             <Paper elevation={3}>
-              <Card>
+              <Card sx={{ 
+                
+                width: "100%", height: "100%" }}>
                 <CardMedia
                   component="img"
                   height="250"

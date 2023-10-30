@@ -128,14 +128,14 @@ const renderFormOrThankYou = () => {
                 value={contactName}
                 onChange={(e) => setContactName(e.target.value)}
                 required={true}
-               sx={{background:"white", borderRadius:"4px"}}
+                className={styles.input}
                
               />
               <TextField
                 label="Company Name"
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
-                sx={{background:"white", borderRadius:"4px"}}
+                className={styles.input}
               />
               
               <TextField
@@ -143,14 +143,15 @@ const renderFormOrThankYou = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required={true}
-                sx={{background:"white", borderRadius:"4px"}}
+                className={styles.input}
+                
               />
               
               <TextField
                 label="Phone Number"
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
-                sx={{background:"white", borderRadius:"4px"}}
+                className={styles.input}
               />
               
               <Box >
@@ -162,7 +163,7 @@ const renderFormOrThankYou = () => {
                   columns={6}
                   value={question}
                   onChange={(e) => setQuestion(e.target.value)}
-                  sx={{background:"white",borderRadius:"4px"}}
+                  className={styles.input}
                 />
               </Box>
             {renderFormOrThankYou()}

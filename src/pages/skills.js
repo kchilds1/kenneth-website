@@ -4,7 +4,7 @@
  import { useRouter } from "next/router";
  import Layout from "@/components/Layout/layout";
  import Lottie from "lottie-react";
-  import animationData from "@/assets/AnimationSkills";
+ import animationData from "/public/assets/skillsanimation";
  import { Typography, Box, Card, CardContent, CardMedia } from "@mui/material";
 
  export default function Skills() {

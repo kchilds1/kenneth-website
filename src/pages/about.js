@@ -3,7 +3,7 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import Layout from "@/components/Layout/layout";
 import Lottie from "lottie-react";
-import animationData from "@/assets/sitAtComputer";
+import animationData from "/public/assets/sitatcomputer";
 import { useRef } from "react";
 import { Typography, Box } from "@mui/material";
 
@@ -22,7 +22,7 @@ export default function About() {
           About Me
           <hr />
         </Typography>
-        <Typography variant="h4" sx={{ color: "white" }}>
+        <Typography variant="h4" className={styles.h4}>
           Web Developer
         </Typography>
         <Box className={styles.text}>

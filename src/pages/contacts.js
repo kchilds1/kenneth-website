@@ -78,6 +78,11 @@ const renderFormOrThankYou = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Button
           sx={{
+            "@media (max-width:375px)": {
+              width:"4%",
+              fontSize:"10px",
+              padding:"5px",
+            },
             color: "white",
             background: "linear-gradient(170deg, deepskyblue, navy 80%)",
             margin: "4px",
@@ -102,7 +107,7 @@ const renderFormOrThankYou = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-       <Box sx={{marginBottom:"20px"}}>
+       <main sx={{marginBottom:"20px"}}>
           <Typography
             variant="h3"
             sx={{ display: "flex", justifyContent: "center" ,color:"white" }}
@@ -169,7 +174,7 @@ const renderFormOrThankYou = () => {
             {renderFormOrThankYou()}
           </Box>
         )}
-      </Box>
+      </main>
     </Layout>
   );
 }

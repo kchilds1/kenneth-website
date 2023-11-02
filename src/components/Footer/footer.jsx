@@ -9,8 +9,9 @@ import { Box, Typography } from "@mui/material";
 
 function Footer() {
   const router = useRouter();
+
   return (
-    <>
+    <div className={styles.footerWrapper}>
       <Box className={styles.foot}>
         <Typography className={styles.text}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
@@ -20,8 +21,8 @@ function Footer() {
             sx={{
               display: "flex",
               justifyContent: "center",
-              gap: "14px",
-              paddingBottom: "13px",
+              gap: "0.7778rem", 
+              paddingBottom: "0.7222rem", 
               alignItems: "center",
             }}
           >
@@ -41,12 +42,12 @@ function Footer() {
               sx={{ color: "white" }}
             />
           </Box>
-          <Box sx={{ fontSize: "12px" }}>
+          <Box sx={{ fontSize: "0.6667rem" }}> 
             Copyright © 2023 Kenneth Childs. All Rights Reserved.
           </Box>
         </Typography>
       </Box>
-    </>
+    </div>
   );
 }
 

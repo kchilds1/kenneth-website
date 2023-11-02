@@ -11,7 +11,7 @@ export default function About() {
   const webDevAnimationRef = useRef();
   return (
     <Layout>
-       <Head>
+      <Head>
         <title>Kenneth website about page</title>
         <meta name="about page" content="about me" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -55,27 +55,21 @@ export default function About() {
             alignContent: "center",
           }}
         >
-          <Typography variant="h4" sx={{ 
-            "@media (max-width: 375px)":{
-                fontSize:"17px",
-            },
-            "@media (max-width:390px)": {
-              marginBottom:"30%",
-              
-            },
-            color: "white", paddingTop: "10px" }}>
+          <Typography variant="h4" sx={{
+            color: "white",
+            paddingTop: "0.5556rem", 
+          }}>
             Personal Information
             <Box className={styles.text}>
               <p>Name: Kenneth Childs Jr</p>
-              <p>Address: Tulsa, OK</p> 
+              <p>Address: Tulsa, OK</p>
               <p>Email: Kenneth.Childs20@gmail.com</p>
             </Box>
           </Typography>
-          <Box sx={{ 
-            "@media (max-width: 375px)":{
-              width:100,
-          },
-            width: 150 }}>
+          <Box sx={{
+            
+            width: "8.3333rem",
+          }}>
             <Lottie
               lottieRef={webDevAnimationRef}
               animationData={animationData}

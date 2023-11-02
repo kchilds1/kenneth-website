@@ -27,7 +27,7 @@ export default function Home() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            padding: "10px",
+            padding: "0.5556rem", 
           }}
         >
           <Box
@@ -35,11 +35,11 @@ export default function Home() {
               display: "flex",
               flexDirection: "column",
               color: "white",
-              padding: "15px",
+              padding: "0.8333rem", 
             }}
           >
             <Typography variant="h3" className={styles.h3}>
-              Web Developer and IT Analyst.
+              Web Developer and IT Analyst
             </Typography>
             <Box className={styles.text}>
               I am a highly motivated web developer with a passion for creating
@@ -74,11 +74,11 @@ export default function Home() {
             sx={{
               background: "linear-gradient(170deg, deepskyblue, navy 80%)",
               color: "white",
-              borderRadius: "25px",
-              fontSize: "20px",
-              font: "bold",
-              paddingBottom: "5px",
-              marginBottom: "10px",
+              borderRadius: "1.3889rem", 
+              fontSize: "1.1111rem", 
+              fontWeight: "bold",
+              paddingBottom: "0.2778rem", 
+              marginBottom: "0.5556rem", 
             }}
           >
             RESUME

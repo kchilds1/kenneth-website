@@ -1,43 +1,19 @@
- /* This was made in order to adjust the opacity of the background image */
- *{
+ 
+  *{
      box-sizing: border-box; 
       margin:0;  
      padding:0;  
-    
- }
- 
-  body{
-   
-   background-color: rgb(70, 60, 60);
-    margin: 0; 
-    padding: 0; 
+      font-size: 18px; 
      
-   
-}  
+ }
 
-body::before{
-    background-image: url('/websiteBackground.jpeg');
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-      background-attachment: fixed;  
-    content:'';
-    position: absolute;
-    inset: 0; 
-    opacity: 0.35;
-  height: 100%; 
-    z-index: -1;
-    top:0;
-    left:0;
-     overflow:hidden; 
+body {
+  background-image: url('/website.png');
+  background-size: cover;
+  width: 100%;
 }
 
-
-h1, h2,h3, h4, h5, h6, img, .footer {
-    isolation: isolate;
-}
-
-
+/*Responsive design*/
 
 
   

@@ -19,7 +19,8 @@
     "next": "^13.4.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-particles": "^2.12.2"
+    "react-particles": "^2.12.2",
+    "swup": "^4.4.2"
   },
   "devDependencies": {
     "eslint": "^8.49.0",

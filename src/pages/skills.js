@@ -98,9 +98,7 @@
            </CardContent>
          </Card>
          <Box sx={{ 
-          "@media (max-width:375px)": {
-            margin:"10%",
-          },
+          
           width: 500 }}>
            <Lottie loop={false} animationData={animationData} /> 
          </Box>

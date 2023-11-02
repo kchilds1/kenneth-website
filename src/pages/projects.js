@@ -49,7 +49,7 @@ export default function Projects() {
           <CircularProgress />
         </Box>
       )}
-      <Grid container spacing={3} style={{ height: "100%",display: "flex" }}>
+      <Grid container spacing={3} style={{ height: "100%",display: "flex", padding:"0.5556rem" }}>
         {projectListing.map((listings) => (
           <Grid item key={listings._id} xs={12} sm={6} md={4}>
             <Paper elevation={3}>

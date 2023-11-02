@@ -25,17 +25,13 @@
        </Box>
        <Box
          sx={{ 
-          "@media (max-width:390px)": {
+          "@media (max-width:803px)": {
             marginTop:"25px",
           },
           display: "flex", justifyContent: "center", alignItems: "center", flexWrap:"wrap" }}
        >
          <Card sx={{ 
-          "@media (max-width:375px)": {
-            marginTop:"10%",
-            paddingRight:"20%",
-            paddingLeft:"20%",
-          },
+          
          
           maxWidth: 345 }}>
            <CardContent
@@ -98,9 +94,7 @@
            </CardContent>
          </Card>
          <Box sx={{ 
-          "@media (max-width:375px)": {
-            margin:"10%",
-          },
+          
           width: 500 }}>
            <Lottie loop={false} animationData={animationData} /> 
          </Box>

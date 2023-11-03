@@ -6,6 +6,7 @@ import Lottie from "lottie-react";
 import animationData from "/public/assets/sitatcomputer";
 import { useRef } from "react";
 import { Typography, Box } from "@mui/material";
+import { motion } from "framer-motion";
 
 export default function About() {
   const webDevAnimationRef = useRef();
@@ -18,10 +19,37 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <motion.div
+          animate={{
+            // x:"0rem",
+            opacity:1
+          }}
+          initial={{
+            // x:"-8rem",
+            opacity: 0.1
+          }}
+          transition={{
+            duration:3
+          }} 
+        >
         <Typography variant="h3" className={styles.h3}>
           About Me
-          <hr />
         </Typography>
+        </motion.div>
+          <hr />
+          <motion.div
+          animate={{
+            x:"0rem",
+            opacity:1
+          }}
+          initial={{
+            x:"8rem",
+            opacity: 0.1
+          }}
+          transition={{
+            duration:2
+          }} 
+        >
         <Typography variant="h4" className={styles.h4}>
           Web Developer
         </Typography>
@@ -47,6 +75,7 @@ export default function About() {
           your digital dreams into reality together!
           <br />
         </Box>
+        </motion.div>
         <hr />
         <Box
           sx={{
@@ -55,6 +84,20 @@ export default function About() {
             alignContent: "center",
           }}
         >
+          <motion.div
+            animate={{
+              x:"0rem",
+              opacity:1
+            }}
+            initial={{
+              x:"-8rem",
+              opacity: 0.1
+            }}
+            transition={{
+              duration:2
+            }}
+          >
+          
           <Typography variant="h4" sx={{
             color: "white",
             paddingTop: "0.5556rem", 
@@ -66,6 +109,7 @@ export default function About() {
               <p>Email: Kenneth.Childs20@gmail.com</p>
             </Box>
           </Typography>
+          </motion.div>
           <Box sx={{
             
             width: "8.3333rem",

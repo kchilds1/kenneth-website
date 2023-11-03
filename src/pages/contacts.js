@@ -71,9 +71,8 @@ export default function Contacts() {
               background: "linear-gradient(170deg, deepskyblue, navy 80%)",
               color: "white",
               borderRadius: "1.3889rem",
-              fontSize: "1.1111rem",
-              fontWeight: "bold",
-              paddingBottom: "0.2778rem",
+              fontSize: ".85em",
+              padding:"0.5556rem",
               marginBottom: "0.5556rem",
             }}
             variant="contained"

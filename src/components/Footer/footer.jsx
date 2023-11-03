@@ -1,4 +1,3 @@
-import Head from "next/head";
 import React from "react";
 import styles from "@/styles/Home.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -21,8 +20,8 @@ function Footer() {
             sx={{
               display: "flex",
               justifyContent: "center",
-              gap: "0.7778rem", 
-              paddingBottom: "0.7222rem", 
+              gap: "0.7778rem",
+              paddingBottom: "0.7222rem",
               alignItems: "center",
             }}
           >
@@ -42,7 +41,7 @@ function Footer() {
               sx={{ color: "white" }}
             />
           </Box>
-          <Box sx={{ fontSize: "0.6667rem" }}> 
+          <Box sx={{ fontSize: "0.6667rem" }}>
             Copyright © 2023 Kenneth Childs. All Rights Reserved.
           </Box>
         </Typography>

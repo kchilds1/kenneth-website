@@ -3,12 +3,7 @@ import { React, useState } from "react";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 import Layout from "@/components/Layout/layout";
-import {
-  TextField,
-  Typography,
-  Box,
-  Button,
-} from "@mui/material";
+import { TextField, Typography, Box, Button } from "@mui/material";
 
 export default function Contacts() {
   const router = useRouter();
@@ -75,11 +70,11 @@ export default function Contacts() {
             sx={{
               background: "linear-gradient(170deg, deepskyblue, navy 80%)",
               color: "white",
-              borderRadius: "1.3889rem", 
-              fontSize: "1.1111rem", 
+              borderRadius: "1.3889rem",
+              fontSize: "1.1111rem",
               fontWeight: "bold",
-              paddingBottom: "0.2778rem", 
-              marginBottom: "0.5556rem",  
+              paddingBottom: "0.2778rem",
+              marginBottom: "0.5556rem",
             }}
             variant="contained"
             onClick={handleSubmit}
@@ -100,14 +95,16 @@ export default function Contacts() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main> 
+      <main>
         <Typography
           variant="h3"
           sx={{ display: "flex", justifyContent: "center", color: "white" }}
         >
           CONTACT
         </Typography>
-        <Typography sx={{ display: "flex", justifyContent: "center", color: "white" }}>
+        <Typography
+          sx={{ display: "flex", justifyContent: "center", color: "white" }}
+        >
           Question, Suggestion, or Complaint? Let Me Know.
         </Typography>
         {submitted ? (
@@ -118,7 +115,7 @@ export default function Contacts() {
               display: "flex",
               justifyContent: "center",
               flexDirection: "column",
-              gap: "0.3556rem", 
+              gap: "0.3556rem",
             }}
           >
             <TextField
@@ -166,10 +163,3 @@ export default function Contacts() {
     </Layout>
   );
 }
-
-
-
-
-
-
-

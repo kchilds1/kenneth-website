@@ -5,10 +5,10 @@ import styles from "@/styles/Home.module.css";
 
 const ContactMessageFields = {
   contactName: "Name",
-  company:"Company",
+  company: "Company",
   email: "Email",
   message: "Message",
-  phoneNumber:"Phone Number",
+  phoneNumber: "Phone Number",
   question: "Question",
 };
 

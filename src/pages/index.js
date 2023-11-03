@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 import Layout from "@/components/Layout/layout";
+import { motion } from "framer-motion";
 
 import { Typography, Box, Button, CardMedia } from "@mui/material";
 
@@ -30,12 +31,17 @@ export default function Home() {
             padding: "0.5556rem", 
           }}
         >
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              color: "white",
-              padding: "0.8333rem", 
+          <motion.div className="home-animation"
+            animate={{
+              y:"0rem",
+              opacity:1
+            }}
+            initial={{
+              y:"8rem",
+              opacity: 0.1
+            }}
+            transition={{
+              duration:2
             }}
           >
             <Typography variant="h3" className={styles.h3}>
@@ -47,14 +53,20 @@ export default function Home() {
               in HTML, CSS, JavaScript, and a variety of frameworks. I'm
               dedicated to delivering exceptional digital experiences.
             </Box>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              color: "white",
-            }}
+          </motion.div>
+          <motion.div className="img-div"
+          animate={{
+            y:"0rem",
+            opacity:1
+          }}
+          initial={{
+            y:"8rem",
+            opacity: 0.1
+          }}
+          transition={{
+            duration:2
+          }}
+            
           >
             <CardMedia
               component="img"
@@ -62,14 +74,14 @@ export default function Home() {
               style={{ width: "100%", borderRadius: "50%" }}
               alt="professional photo"
             />
-            <Typography variant="h5" className={styles.text}>
+            <Typography variant="h5" className={`${styles.text} ${styles.imageName}`}>
               Kenneth Childs
             </Typography>
-          </Box>
+          </motion.div>
         </Box>
 
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Button
+          <Button 
             onClick={handleButtonClick}
             sx={{
               background: "linear-gradient(170deg, deepskyblue, navy 80%)",

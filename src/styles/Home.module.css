@@ -28,6 +28,8 @@
 
 .text {
   font-size: 1.1111rem; 
+  
+  
 }
 
 .input {
@@ -36,6 +38,26 @@
 }
 
 
-/* Responsive Typography */
- 
-/*Header*/
+.home-animation{
+  display: flex;
+  flex-direction: column;
+  color:white;
+  padding: "0.8333rem";
+}
+
+.resume-button {
+  background: linear-gradient(170deg, deepskyblue, navy 80%);
+  border-radius: 1.3889rem;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imageName {
+  display: flex;
+  justify-content: center;
+}

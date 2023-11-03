@@ -13,6 +13,9 @@ const contactsSchema = new mongoose.Schema({
     phoneNumber: {
         type: String,
     },
+    question: {
+      type: String,
+    }
 });
 
 const contactsModel = mongoose.models.contacts || 

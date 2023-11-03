@@ -31,6 +31,7 @@ export default function Contacts() {
       contactName,
       email,
       phoneNumber,
+      question,
     };
 
     console.log("Payload: ", infoPayload);
@@ -47,7 +48,8 @@ export default function Contacts() {
         console.log("Data sent successfully!");
         setSubmitted(true);
       } else {
-        console.log("Failed to send data to the server.");
+        throw new Error("Failed to send contact information");
+        console.log("Failed to send contact information.");
       }
     } catch (error) {
       console.error("An error occurred:", error);
@@ -149,6 +151,7 @@ export default function Contacts() {
                 label="Comments/Questions"
                 multiline
                 rows={3}
+                required={true}
                 columns={6}
                 value={question}
                 onChange={(e) => setQuestion(e.target.value)}

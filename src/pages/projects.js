@@ -49,14 +49,20 @@ export default function Projects() {
           <CircularProgress />
         </Box>
       )}
-      <Grid container spacing={3} style={{ height: "100%",display: "flex", padding:"0.5556rem" }}>
+      <Grid
+        container
+        spacing={3}
+        style={{ height: "100%", display: "flex", padding: "0.5556rem" }}
+      >
         {projectListing.map((listings) => (
           <Grid item key={listings._id} xs={12} sm={6} md={4}>
             <Paper elevation={3}>
-              <Card sx={{
-                width: "100%",
-                minHeight: "10.5556rem", 
-              }}>
+              <Card
+                sx={{
+                  width: "100%",
+                  minHeight: "10.5556rem",
+                }}
+              >
                 <CardMedia
                   component="img"
                   height="250"
@@ -72,18 +78,19 @@ export default function Projects() {
                   sx={{
                     display: "flex",
                     justifyContent: "center",
-                    margin: "0.2222rem", 
-                    gap: "0.2222rem", 
+                    margin: "0.2222rem",
+                    gap: "0.2222rem",
                   }}
                 >
                   <Button
                     onClick={() => handleOpenInNewTab(listings.codeLink)}
                     sx={{
-                      marginRight: "0.2222rem", 
-                      background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+                      marginRight: "0.2222rem",
+                      background:
+                        "linear-gradient(170deg, deepskyblue, navy 80%)",
                       color: "white",
-                      borderRadius: "0.8333rem", 
-                      padding: "0.2778rem", 
+                      borderRadius: "0.8333rem",
+                      padding: "0.2778rem",
                     }}
                   >
                     CODE
@@ -91,11 +98,12 @@ export default function Projects() {
                   <Button
                     onClick={() => handleOpenInNewTab(listings.projectLink)}
                     sx={{
-                      marginRight: "0.2222rem", 
-                      background: "linear-gradient(170deg, deepskyblue, navy 80%)",
+                      marginRight: "0.2222rem",
+                      background:
+                        "linear-gradient(170deg, deepskyblue, navy 80%)",
                       color: "white",
-                      borderRadius: "0.8333rem", 
-                      padding: "0.2778rem", 
+                      borderRadius: "0.8333rem",
+                      padding: "0.2778rem",
                     }}
                   >
                     PROJECT

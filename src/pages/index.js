@@ -28,20 +28,21 @@ export default function Home() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            padding: "0.5556rem", 
+            padding: "0.5556rem",
           }}
         >
-          <motion.div className="home-animation"
+          <motion.div
+            className="home-animation"
             animate={{
-              y:"0rem",
-              opacity:1
+              y: "0rem",
+              opacity: 1,
             }}
             initial={{
-              y:"8rem",
-              opacity: 0.1
+              y: "8rem",
+              opacity: 0.1,
             }}
             transition={{
-              duration:2
+              duration: 2,
             }}
           >
             <Typography variant="h3" className={styles.h3}>
@@ -54,19 +55,19 @@ export default function Home() {
               dedicated to delivering exceptional digital experiences.
             </Box>
           </motion.div>
-          <motion.div className="img-div"
-          animate={{
-            y:"0rem",
-            opacity:1
-          }}
-          initial={{
-            y:"8rem",
-            opacity: 0.1
-          }}
-          transition={{
-            duration:2
-          }}
-            
+          <motion.div
+            className="img-div"
+            animate={{
+              y: "0rem",
+              opacity: 1,
+            }}
+            initial={{
+              y: "8rem",
+              opacity: 0.1,
+            }}
+            transition={{
+              duration: 2,
+            }}
           >
             <CardMedia
               component="img"
@@ -74,23 +75,26 @@ export default function Home() {
               style={{ width: "100%", borderRadius: "50%" }}
               alt="professional photo"
             />
-            <Typography variant="h5" className={`${styles.text} ${styles.imageName}`}>
+            <Typography
+              variant="h5"
+              className={`${styles.text} ${styles.imageName}`}
+            >
               Kenneth Childs
             </Typography>
           </motion.div>
         </Box>
 
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Button 
+          <Button
             onClick={handleButtonClick}
             sx={{
               background: "linear-gradient(170deg, deepskyblue, navy 80%)",
               color: "white",
-              borderRadius: "1.3889rem", 
-              fontSize: "1.1111rem", 
+              borderRadius: "1.3889rem",
+              fontSize: "1.1111rem",
               fontWeight: "bold",
-              paddingBottom: "0.2778rem", 
-              marginBottom: "0.5556rem", 
+              paddingBottom: "0.2778rem",
+              marginBottom: "0.5556rem",
             }}
           >
             RESUME

@@ -74,7 +74,7 @@ export default function Contacts() {
               color: "white",
               borderRadius: "1.3889rem",
               fontSize: ".85em",
-              padding:"0.5556rem",
+              padding: "0.5556rem",
               marginBottom: "0.5556rem",
             }}
             variant="contained"

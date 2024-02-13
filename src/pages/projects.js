@@ -33,7 +33,12 @@ export default function Projects() {
   }, []);
 
   const handleOpenInNewTab = (url) => {
-    window.open(url, "_blank");
+    if(!url){
+      alert("There is no code for this project")
+    } else {
+
+      window.open(url, "_blank");
+    }
   };
 
   return (

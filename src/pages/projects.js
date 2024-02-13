@@ -34,7 +34,7 @@ export default function Projects() {
 
   const handleOpenInNewTab = (url) => {
     if(!url){
-      alert("There is no code for this project")
+      alert("There is no code available for this project")
     } else {
 
       window.open(url, "_blank");
